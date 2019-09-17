@@ -1,37 +1,40 @@
 <html>
 <head>
 <title>Team Premiere Login Page</title>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="login.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
-		<div class="container login-container">
-			<div class="row">
-				<div class="col-md-6 login-form-1">
-	<h2>TEAM PREMIERE LOGIN PAGE</h2>
-	  <form action="login.php">
-		<div class="form-group">
-		<i class="fa fa-envelope icon"></i>
-		<input type="email" class="form-control" name="emailAddress" placeholder="&#xf0e0;  Email:" value="">
-		</div>
-		<div class="form-group">
-		<i class="fa fa-lock icon"> </i>
-		<input type="password" class="form-control" id="psw" placeholder="Password:" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-		</div>
-		<div class="form-group">
-		<input type="submit" class="btnSubmit" value="Login" />
-		</div>
-		<div class="form-group">
-				<input type="checkbox" class="remember" name="remember"> Remember me
+		<div class="container "></div>
+	  <form method="POST" action="login.php">
+		<table border="0" cellpadding="10" cellspacing="1" width="600" align="center" class="tblLogin">
+		<tr class="tableheader">
+			<td><strong>PREMIERE LOGIN PAGE </strong> </td>
+		</tr>
+		<tr class="tablerow">
+				<td><i class="fa fa-envelope icon"></i>
+				<input type="email" name="emailAddress" placeholder="&#xf0e0; Email:" class="login-input"></td>
+				</tr>
+		<tr class="tablerow">
+				<td><i class="fa fa-lock icon"> </i>
+				<input type="password" id="psw"  class="login-input" placeholder="Password:" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+				</td>
+				</tr>
+		<tr class="tableheader">
+				<td align="center" colspan="2"><input type="submit" class="btnSubmit" value="Login" /></td>
+				</tr>
+				<tr class="row">
+						<td>
+				<input type="checkbox"  name="remember"> <label class="remember" >Remember Me</label> 
 				<a href="#" class="ForgetPwd">Forget Password?</a>
-			</div>
+			</td>
 	  </form>
+	  <tr class="tablerow">
+			<td><a href="#" class="sign">Dont Have An Account Yet? Sign Up Here</a></td>
+			</tr>
 	</div>
-	  
-		
 	<div id="message">
 	  <h3>Password must contain the following:</h3>
 	  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
@@ -44,3 +47,6 @@
 	
 	</body>
 	</html>
+
+						
+	
