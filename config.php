@@ -1,8 +1,8 @@
 <?php
-	$host = "localhost";
-	$user = "root";
-	$pass = "";
-	$db = "premiere";
+	$host = "remotemysql.com";
+	$user = "EukRWuQJzc";
+	$pass = "0AtgxFwNmC";
+	$db = "EukRWuQJzc";
 	
 	$conn = new mysqli($host, $user, $pass, $db);
 	if($conn->connect_error){
