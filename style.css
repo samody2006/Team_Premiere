@@ -51,8 +51,9 @@ body {
     cursor: pointer;
   }
   
+
   .ForgetPwd{
-    color: green;
+    color: #f79862;
     font-weight: 800;
     text-decoration: none;
     float: right;
