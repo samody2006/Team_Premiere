@@ -1,0 +1,86 @@
+
+/* Style the body */
+
+body {
+background-image: url("https://bit.ly/2kOYvZQ");
+background-attachment: fixed ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+ .login-container{
+  margin-left: 450px;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.login-form-1{
+  padding: 5%;
+  }
+ 
+.login-form-1 h2{
+  text-align: center;
+  color: green;
+}
+
+.login-container form{
+  padding: 10%;
+}
+.btnSubmit
+{
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  border: none;
+  cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+  font-weight: 600;
+  color: #fff;
+  background-color: green;
+}
+
+.login-form-1 .ForgetPwd{
+  color: green;
+  font-weight: 800;
+  text-decoration: none;
+}
+.login-form-1 .remember{
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+}
+/* Add a hover effect for buttons */
+.btnSubmit:hover {
+  opacity: 0.6;
+}
+
+.fontAwesome {
+  font-family: Helvetica, 'FontAwesome', sans-serif;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";}
+  /* Change styles for span and cancel button on extra small screens */
+ @media screen and (max-width: 300px) {}
+ span.psw {
+   display: block;
+   float: none;
+ } 

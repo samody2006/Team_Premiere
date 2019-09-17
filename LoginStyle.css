@@ -1,5 +1,4 @@
-﻿
-/* Style the body */
+﻿* Style the body */
 
 body {
 background-image: url("https://bit.ly/2kOYvZQ");
@@ -61,13 +60,11 @@ button:hover {
   font-family: Helvetica, 'FontAwesome', sans-serif;
 }
 
-
-
 /* Style the container for inputs */
 .container {
    position: absolute;
   margin-left: 450px;
-   max-width: 800px
+   max-width: 800px;
    padding: 80px;
    border-radius: 25px;
 }
@@ -90,12 +87,15 @@ margin-left: 500px;
 }
 
 .rem {
-margin-top: 200px;
-float: center;
+margin-top: 265px;
+margin-left: 500px;
 color: white;
 }
-
-
+.for {
+    margin-top: 200px;
+    margin-left: 800px;
+    color: white;
+    }
 
 /* Add a green text color and a checkmark when the requirements are right */
 .valid {
@@ -116,21 +116,11 @@ color: white;
 .invalid:before {
   position: relative;
   left: -35px;
-  content: "✖";
-
-
-
-
+  content: "✖";}
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+ @media screen and (max-width: 300px) {}
   span.psw {
     display: block;
     float: none;
   } 
-
-
-
-
-}
-

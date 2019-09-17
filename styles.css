@@ -1,127 +1,86 @@
-* Style the body */
+
+/* Style the body */
 
 body {
-background-image: url("https://bit.ly/2kOYvZQ");
-background-attachment: fixed ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
- }
-    
-.login {
-color: green;
-margin-top: 110px;
-
-
-}
-
-
-/* Style all label fields */
-
-label {
-color: white;
-
-}
-
-
-/* Style all input fields */
-input {
-  width: 80%;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  box-sizing: border-box;
-  margin-top: 10px;
-  resize: vertical;
-margin-left: 50px;
-  
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px;
- margin: 18px 0px;
-margin-left: 180px;
-  border: none;
-  cursor: pointer;
-  width: 40%;
-border-radius: 25px;
-
-}
-
-/* Add a hover effect for buttons */
-button:hover {
-  opacity: 0.6;
-}
-
-.fontAwesome {
-  font-family: Helvetica, 'FontAwesome', sans-serif;
-}
-
-/* Style the container for inputs */
-.container {
-   position: absolute;
-  margin-left: 450px;
-   max-width: 800px;
-   padding: 80px;
-   border-radius: 25px;
-}
-
-/* The message box is shown when the user clicks on the password field */
-#message {
-  display:none;
-  background: #f1f1f1;
-  color: #000;
-  position: relative;
-  padding: 2px;
-  margin-top: 20px;
-max-width: 500px;
-margin-left: 500px;
-}
-
-#message p {
- padding: 8px 35px;
-  font-size: 14px;
-}
-
-.rem {
-margin-top: 265px;
-margin-left: 500px;
-color: white;
-}
-.for {
-    margin-top: 200px;
-    margin-left: 800px;
-    color: white;
+    background-image: url("https://bit.ly/2kOYvZQ");
+    background-attachment: fixed ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+     }
+     .login-container{
+      margin-left: 450px;
+      margin-top: 3%;
+      margin-bottom: 5%;
     }
-
-/* Add a green text color and a checkmark when the requirements are right */
-.valid {
-  color: green;
-}
-
-.valid:before {
-  position: relative;
-  left: -35px;
-  content: "✔";
-}
-
-/* Add a red text color and an "x" when the requirements are wrong */
-.invalid {
-  color: red;
-}
-
-.invalid:before {
-  position: relative;
-  left: -35px;
-  content: "✖";
-
-/* Change styles for span and cancel button on extra small screens */
- @media screen and (max-width: 300px) 
-  span.psw {
-    display: block;
-    float: none;
-  } 
-}
+    .login-form-1{
+      padding: 5%;
+      }
+     
+    .login-form-1 h2{
+      text-align: center;
+      color: green;
+    }
+    
+    .login-container form{
+      padding: 10%;
+    }
+    .btnSubmit
+    {
+      width: 50%;
+      border-radius: 1rem;
+      padding: 1.5%;
+      border: none;
+      cursor: pointer;
+    }
+    .login-form-1 .btnSubmit{
+      font-weight: 600;
+      color: #fff;
+      background-color: green;
+    }
+    
+    .login-form-1 .ForgetPwd{
+      color: green;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .login-form-1 .remember{
+      color: #fff;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    /* Add a hover effect for buttons */
+    .btnSubmit:hover {
+      opacity: 0.6;
+    }
+    
+    .fontAwesome {
+      font-family: Helvetica, 'FontAwesome', sans-serif;
+    }
+    
+    /* Add a green text color and a checkmark when the requirements are right */
+    .valid {
+      color: green;
+    }
+    
+    .valid:before {
+      position: relative;
+      left: -35px;
+      content: "✔";
+    }
+    
+    /* Add a red text color and an "x" when the requirements are wrong */
+    .invalid {
+      color: red;
+    }
+    
+    .invalid:before {
+      position: relative;
+      left: -35px;
+      content: "✖";}
+      /* Change styles for span and cancel button on extra small screens */
+     @media screen and (max-width: 300px) {}
+     span.psw {
+       display: block;
+       float: none;
+     } 
