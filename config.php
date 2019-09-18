@@ -1,11 +1,14 @@
 <?php
-	$host = "remotemysql.com";
-	$user = "EukRWuQJzc";
-	$pass = "0AtgxFwNmC";
-	$db = "EukRWuQJzc";
-	
-	$conn = new mysqli($host, $user, $pass, $db);
-	if($conn->connect_error){
-		echo "Failed:" . $conn->connect_error;
-	}
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "premiere";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
 ?>

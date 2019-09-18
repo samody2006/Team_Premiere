@@ -1,4 +1,5 @@
 <?php
+
 						if(isset($_POST['create'])){
 							include 'config.php';
 							$name = $_POST['name'];
@@ -8,11 +9,11 @@
 							
 							$qry = "INSERT INTO user (name,email,psw,psw1)
 							VALUES('$name','$email', '$psw','$psw1')";
-							$result = $conn->query($qry);
-							if($result == TRUE){
+							
+						if ($conn->query($qry) === TRUE){
 								echo "<script type = \"text/javascript\">
 											alert(\"Registration Successful.\");
-											window.location = (\"index.html\")
+											window.location = (\"welcome.php\")
 											</script>";
 							} else{
 								echo "<script type = \"text/javascript\">
@@ -23,3 +24,4 @@
 						}
 						
 					  ?>
+
