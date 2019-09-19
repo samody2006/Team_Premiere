@@ -8,7 +8,7 @@
 <div>
 
 <p>Welcome !</p>
-	<p>This Team Premiere Page.</p>
+	<p>This is Team Premiere Page.</p>
 
 <a href="logout.php">Logout</a>
 </div>
