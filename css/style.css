@@ -215,10 +215,6 @@ body a:hover {
     text-decoration: none;
 }
 
-.clearfix {
-    clear: both;
-}
-
 /* content */
 
 /*
@@ -247,6 +243,7 @@ body {
 .text-center {
     text-align: center;
 }
+.Show {color:#F79862 }
 
 /*/////////////// FONT STYLES ////////////////////*/
 
@@ -260,20 +257,20 @@ ul.links-unordered-list li.active a {
     color: #F79862;
 }
 .icon span.fa{
-    font-size: 46px;
+    font-size: 40px;
     color: #F79862;
 }
 .icon{
-	margin-bottom:3em;
+	margin-bottom:2em;
 }
 .content-bottom {
-    padding: 0em 3em;
-    margin: 0 1em;
+    padding: 0em 1em;
+    margin: 0 0em;
 	position: relative; 
     z-index: 1;
 }
 .logo h1 a {
-    font-size: 25px;
+    font-size: 22px;
     color: #fff;
     text-transform: capitalize;
     font-weight: 600;
@@ -282,7 +279,7 @@ ul.links-unordered-list li.active a {
     border-radius: 20px;
     border-color: #F79862;
     background: #F79862;
-    padding: 10px 10px 10px 10px;
+    padding: 0px 10px 0px 10px;
 }
 .content-w3ls ul li {
     display: inline-block;
@@ -296,7 +293,7 @@ ul.list-login li:nth-child(2) {
     float: right;
 }
 ul.list-login-bottom li:nth-child(2) {
-    float: right;
+    float: center;
 }
 
 .field-group label {
@@ -371,8 +368,8 @@ form .field-group {
     /* TWEENER - IE 10 */
     display: -webkit-flex;
     /* NEW - Chrome */
-    margin-bottom: 20px;
-    padding: 2px 10px 2px 0;
+    margin-bottom: 18px;
+    padding: 2px 0px 2px 0;
 	border-radius: 35px;
 	-webkit-border-radius: 35px;
 	-moz-border-radius: 35px;
@@ -384,7 +381,7 @@ form .field-group span {
     flex: 1;
     -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 1;         /* OLD - Firefox 19- */
-    width: 20%;               /* For old syntax, otherwise collapses. */
+    width: 30%;               /* For old syntax, otherwise collapses. */
     -webkit-flex: 1;          /* Chrome */
     -ms-flex: 1;              /* IE 10 */
     color: #F79862;
@@ -399,23 +396,24 @@ ul.list-login {
 }
 
 form .field-group .wthree-field {
-    flex: 4 50%;
-    -webkit-box-flex:4 50%;     /* OLD - iOS 6-, Safari 3.1-6 */
-    -moz-box-flex: 4 50%;        /* OLD - Firefox 19- */
-    -webkit-flex: 4 50%;          /* Chrome */
-    -ms-flex: 4 50%;             /* IE 10 */
+    flex: 4 46%;
+    -webkit-box-flex:4 46%;     /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 4 46%;        /* OLD - Firefox 19- */
+    -webkit-flex: 4 46%;          /* Chrome */
+    -ms-flex: 4 46%;             /* IE 10 */
 }
 
 .wthree-field button.btn {
     background: #F79862;
     border: none;
     color: #fff;
-    padding: 11px 15px;
+    padding: 8px 10px;
     text-transform: uppercase;
 	font-family: 'Mukta', sans-serif;
     font-size: 16px;
-	width:100%;
-	margin-top:10px;
+	width:60%;
+    margin-left: 80px;
+	margin-top:5px;
     letter-spacing: 2px;
     cursor: pointer;
     transition: 0.5s all;
@@ -477,14 +475,14 @@ form .field-group .wthree-field {
     -o-border-radius: 35px;
     float: right;
 }
-.bottom-grid,.bottom-grid1{
+.bottom-grid{
     display: flex;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     justify-content: space-between;
-    margin: 0em 10em;
+    margin: 0em 8em;
 }
 ul.links-unordered-list li {
     display: inline-block;
@@ -532,7 +530,7 @@ label.switch {
     padding-left: 3em;
     cursor: pointer;
     color: #F79862;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 li:nth-child(2) a,
@@ -544,7 +542,7 @@ label.switch {
     text-transform: capitalize;
 }
 ul.list-login-bottom li:nth-child(1) a,ul.list-login-bottom li:nth-child(2) a {
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 2px;
     font-weight: normal;
     text-transform: uppercase;
@@ -663,7 +661,7 @@ input:checked+.slider:before {
     }
 }
 @media screen and (max-width: 1080px) {
-    .bottom-grid,.bottom-grid1 {
+    .bottom-grid{
 		margin: 0em 5em;
 	}
 	.icon span.fa {
@@ -671,22 +669,14 @@ input:checked+.slider:before {
 	}
 }
 @media screen and (max-width: 900px) {
-   .bottom-grid, .bottom-grid1 {
+   .bottom-grid {
 		margin: 0em 2em;
 	}
 }
-@media screen and (max-width: 800px) {
-	.bottom-grid1 {
-		flex-direction: column;
-		text-align: center;
-	}
-	.copyright {
-		margin-top: 1em;
-	}
-}
+
 @media screen and (max-width: 768px) {
 	.logo h1 a {
-		font-size: 22px;
+		font-size: 18px;
 	}
 }
 @media screen and (max-width: 668px) {
@@ -694,7 +684,7 @@ input:checked+.slider:before {
     .content-w3ls {
         margin: 3em auto;
     }
-	ul.links-unordered-list li a,.copyright p {
+	ul.links-unordered-list li a,{
 		font-size: 15px;
 	}
 	ul.links-unordered-list li {
@@ -710,8 +700,8 @@ input:checked+.slider:before {
 		font-size: 40px;
 	}
 	ul.list-login-bottom li:nth-child(1) a, ul.list-login-bottom li:nth-child(2) a {
-		font-size: 14px;
-	}
+		font-size: 18px;
+        	}
 }
 @media screen and (max-width: 568px) {
     .content-bottom {
@@ -725,17 +715,17 @@ input:checked+.slider:before {
 
 @media screen and (max-width: 480px) {
 	  .logo h1 a {
-		font-size: 20px;
+		font-size: 16px;
 	}
 }
 
 @media screen and (max-width: 415px) {
-    .bottom-grid, .bottom-grid1 {
+    .bottom-grid{
 		flex-direction: column;
 		text-align: center;
 	}
 	.logo {
-		margin-bottom: 10px;
+		margin-bottom: 0px;
 	}
 	form .field-group {
 		padding: 0px 10px 0px 0;
@@ -746,7 +736,7 @@ input:checked+.slider:before {
 	ul.list-login-bottom li:nth-child(1) a, ul.list-login-bottom li:nth-child(2) a {
 		font-size: 13px;
 	}
-	.bottom-grid, .bottom-grid1 {
+	.bottom-grid{
 		margin: 0em 1em;
 	}
 }
