@@ -623,9 +623,10 @@ input:checked+.slider:before {
   color: #000;
   padding: 2px;
   margin-top: 10px;
-  max-width: 300px;
-  margin-top: 10px;
-  margin-left: 500px;
+  max-width: 270px;
+  margin-top: -400px;
+  margin-left: 50px;
+  border-radius: 25px;
 }
 
 #message p {
@@ -667,17 +668,65 @@ input:checked+.slider:before {
 	.icon span.fa {
 		font-size: 20px;
 	}
+        #message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  padding: 2px;
+  margin-top: 10px;
+  max-width: 270px;
+  margin-top: -30px;
+  margin-left: 100px;
+  border-radius: 25px;
+}
+
+#message p {
+ padding: 8px 35px;
+  font-size: 14px;
+}
 }
 @media screen and (max-width: 900px) {
    .bottom-grid {
 		margin: 0em 2em;
 	}
+        #message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  padding: 2px;
+  margin-top: 10px;
+  max-width: 270px;
+  margin-top: -30px;
+  margin-left: 90px;
+  border-radius: 25px;
+}
+
+#message p {
+ padding: 8px 35px;
+  font-size: 14px;
+}
 }
 
 @media screen and (max-width: 768px) {
 	.logo h1 a {
 		font-size: 18px;
 	}
+        #message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  padding: 2px;
+  margin-top: 10px;
+  max-width: 270px;
+  margin-top: -30px;
+  margin-left: 70px;
+  border-radius: 25px;
+}
+
+#message p {
+ padding: 8px 35px;
+  font-size: 14px;
+}
 }
 @media screen and (max-width: 668px) {
     
@@ -702,6 +751,22 @@ input:checked+.slider:before {
 	ul.list-login-bottom li:nth-child(1) a, ul.list-login-bottom li:nth-child(2) a {
 		font-size: 18px;
         	}
+                #message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  padding: 2px;
+  margin-top: 10px;
+  max-width: 270px;
+  margin-top: -30px;
+  margin-left: 60px;
+  border-radius: 25px;
+}
+
+#message p {
+ padding: 8px 35px;
+  font-size: 14px;
+}
 }
 @media screen and (max-width: 568px) {
     .content-bottom {
@@ -711,12 +776,44 @@ input:checked+.slider:before {
 		margin: 3em auto 2em;
 		max-width: 450px;
 	}
+            #message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  padding: 2px;
+  margin-top: 10px;
+  max-width: 270px;
+  margin-top: -30px;
+  margin-left: 50px;
+  border-radius: 25px;
+}
+
+#message p {
+ padding: 8px 35px;
+  font-size: 14px;
+}
 }
 
 @media screen and (max-width: 480px) {
 	  .logo h1 a {
 		font-size: 16px;
 	}
+        #message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  padding: 2px;
+  margin-top: 10px;
+  max-width: 270px;
+  margin-top: -30px;
+  margin-left: 50px;
+  border-radius: 25px;
+}
+
+#message p {
+ padding: 8px 35px;
+  font-size: 14px;
+}
 }
 
 @media screen and (max-width: 415px) {
@@ -739,6 +836,22 @@ input:checked+.slider:before {
 	.bottom-grid{
 		margin: 0em 1em;
 	}
+    #message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  padding: 2px;
+  margin-top: 10px;
+  max-width: 270px;
+  margin-top: -30px;
+  margin-left: 20px;
+  border-radius: 25px;
+}
+
+#message p {
+ padding: 8px 35px;
+  font-size: 14px;
+}
 }
 
 @media screen and (max-width: 384px) {
@@ -751,6 +864,22 @@ input:checked+.slider:before {
 	label.switch {
 		padding-left: 2.5em;
 	}
+    #message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  padding: 2px;
+  margin-top: 10px;
+  max-width: 250px;
+  margin-top: -30px;
+  margin-left: 20px;
+  border-radius: 25px;
+}
+
+#message p {
+ padding: 8px 35px;
+  font-size: 14px;
+}
 }
 
 @media screen and (max-width: 375px) {

@@ -1,13 +1,21 @@
-function randomPassword(length) {
-    var chars = "abcdefghijklmnopqrstuvwxyz!@#$%^&*()-+<>ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-    var pass = "";
-    for (var x = 0; x < length; x++) {
-        var i = Math.floor(Math.random() * chars.length);
-        pass += chars.charAt(i);
-    }
-    return pass;
-}
+$(".toggle-password").click(function() {
 
-function generate() {
-    myform.row_password.value = randomPassword(myform.length.value);
-}
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+
+$(".toggle-password1").click(function() {
+
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
