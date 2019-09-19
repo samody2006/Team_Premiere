@@ -1,21 +1,13 @@
-$(".toggle-password").click(function() {
+var password = document.getElementById("psw")
+  , confirm_password = document.getElementById("psw1");
 
-  $(this).toggleClass("fa-eye fa-eye-slash");
-  var input = $($(this).attr("toggle"));
-  if (input.attr("type") == "password") {
-    input.attr("type", "text");
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
   } else {
-    input.attr("type", "password");
+    confirm_password.setCustomValidity('');
   }
-});
+}
 
-$(".toggle-password1").click(function() {
-
-  $(this).toggleClass("fa-eye fa-eye-slash");
-  var input = $($(this).attr("toggle"));
-  if (input.attr("type") == "password") {
-    input.attr("type", "text");
-  } else {
-    input.attr("type", "password");
-  }
-});
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
